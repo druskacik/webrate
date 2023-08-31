@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "WebRate",
+  "version": "1.0",
+  "description": "Rate any website. See what others think about the website you are visiting. Ratings are shown in the search results.",
+  "icons": {
+    "48": "icons/logo-48x48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "http://localhost/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/logo-32x32.png",
+    "default_title": "WebRate",
+    "default_popup": "popup/webrate.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/search?*"],
+      "js": ["content-scripts/google.js"]
+    }
+  ]
+}

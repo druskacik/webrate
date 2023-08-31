@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="webrate.css" />
+</head>
+
+<body>
+    <div id="main-rating">
+        <div class="button" id="thumbsUpButton">
+            <img src="assets/thumbs-up.svg" alt="thumbs up" height="80" width="80" />
+        </div>
+        <div class="button" id="thumbsDownButton">
+            <img src="assets/thumbs-down.svg" alt="thumbs up" height="80" width="80" />
+        </div>
+    </div>
+    <div id="thankYou">
+        <p>Thanks for the rating!</p>
+    </div>
+    <!-- TODO: add positive feedback -->
+    <div id="feedbackNegative">
+        <div>
+            <p>Thanks! Optionally, you can specify your rating below:</p>
+        </div>
+        <div class="chips">
+            <div class="chip chip--negative" title="Too many pop-ups">Too many pop-ups</div>
+            <div class="chip chip--negative" title="Scam">Scam</div>
+            <div class="chip chip--negative" title="Paid content">Paid content</div>
+            <div class="chip chip--negative" title="AI generated">AI generated</div>
+        </div>
+        <div>
+            <button
+                id="feedbackNegativeButton"
+                type="button"
+            >
+                Send
+            </button>
+        </div>
+    </div>
+    <script src="webrate.js"></script>
+</body>
+
+</html>

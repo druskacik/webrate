@@ -1,0 +1,1 @@
+Icons by <a href="https://www.svgrepo.com/collection/untitled-ui-oval-interface-icons" target="_blank">SVG Repo</a>.
